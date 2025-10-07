@@ -1,0 +1,28 @@
+# Baseline parameter configuration for the polarized disinformation model.
+government:
+  population_share: 0.5
+  gamma: 0.2
+  rho: 0.05
+  delta: 0.0
+  beta_min: 0.2
+  beta_0: 0.6
+  mu_min: 0.1
+  mu_0: 0.5
+  w_beta: 1.0
+  w_mu: 1.2
+  r_I: 5.0
+opposition:
+  population_share: 0.5
+  gamma: 0.2
+  rho: 0.05
+  delta: 0.0
+  beta_min: 0.2
+  beta_0: 0.6
+  mu_min: 0.1
+  mu_0: 0.5
+  w_beta: 1.1
+  w_mu: 1.3
+  r_I: 5.5
+discount_rate: 0.03
+horizon: 100.0
+seed: 42
