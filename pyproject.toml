@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polarized-disinformation"
+version = "0.1.0"
+description = "Strategic disinformation diffusion model with Nash equilibrium and social planner analysis"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Polarized Disinformation Modeling Team"}
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+]
+
+[project.scripts]
+polarized-disinformation = "main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["polarized_disinformation", "polarized_disinformation.*"]
+
+[tool.setuptools]
+py-modules = ["main"]
